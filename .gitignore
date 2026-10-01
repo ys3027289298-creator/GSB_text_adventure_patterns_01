@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+*.pyd
+
+# Sublime text
+*.sublime-project
+*.sublime-workspace
+
+# Spyder
+.spyderworkspace
+
+# pytest
+.cache
