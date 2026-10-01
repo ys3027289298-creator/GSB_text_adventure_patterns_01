@@ -1,0 +1,2 @@
+# GSB_text_adventure_patterns_01
+Clone of codebuddies/text_adventure
