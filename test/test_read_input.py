@@ -17,18 +17,18 @@ def test_read_input_move_to(monkeypatch):
     command, *args = read_input()
 
     assert command == "move_to"
-    assert args == ("some location",)
+    assert args == ["some location"]
 
 def test_read_input_move_to_all_caps(monkeypatch):
     monkeypatch.setitem(__builtins__, 'input', lambda x: "MOVE TO some location")
     command, *args = read_input()
 
     assert command == "move_to"
-    assert args == ("some location",)
+    assert args == ["some location"]
 
 def test_read_input_unknown_commant(monkeypatch):
     monkeypatch.setitem(__builtins__, 'input', lambda x: "unknown command")
     command, *args = read_input()
 
-    assert commant == "unknown"
-    assert args == tuple()
+    assert command == "unknown"
+    assert args == []
